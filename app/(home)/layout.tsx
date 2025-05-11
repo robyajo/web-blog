@@ -9,12 +9,9 @@ export default function RootLayout({
 }>) {
   return (
     <>
-    
       <div className="min-h-screen">
         <BlogHeader />
-        <main className="container px-4 py-6 md:py-10">
-        {children}
-        </main>
+        <main className="container px-4 py-6 md:py-10">{children}</main>
         {/* Footer */}
         <footer className="border-t bg-muted/40">
           <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
