@@ -72,3 +72,62 @@
     @apply font-heading;
   }
 }
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Small screens (phones) */
+  @media (min-width: 480px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Large screens (laptops) */
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      max-width: 1200px;
+    }
+  }
+  
+  /* Extra large screens (desktops) */
+  @media (min-width: 1280px) {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      max-width: 1400px;
+    }
+  }
+  
+  /* Ultra wide screens */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1600px;
+    }
+  }
+  
+  /* Super wide screens */
+  @media (min-width: 2250px) {
+    .container {
+      max-width: 2250px;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+}
